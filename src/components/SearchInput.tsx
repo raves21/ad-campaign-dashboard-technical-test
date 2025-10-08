@@ -14,7 +14,7 @@ export default function SearchInput({ search, setSearch }: Props) {
         value={search}
         onChange={(e) => setSearch(e.currentTarget.value)}
         type="text"
-        placeholder="Search by title..."
+        placeholder="Search by title or ID..."
         className="border-2 md:text-base w-full border-gray-300 py-4 pl-11 pr-3 rounded-xl focus:outline-purple-500"
       />
       <input type="submit" className="hidden" />

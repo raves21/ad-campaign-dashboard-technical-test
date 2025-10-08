@@ -22,9 +22,11 @@ function Index() {
 
     let filtered: TCampaign[] = data;
     if (search) {
-      filtered = data.filter((campaign) =>
-        campaign.title.toLowerCase().includes(search.toLowerCase())
-      );
+      filtered = data.filter((campaign) => {
+        const matchesTitle = campaign.title.toLowerCase().includes(search);
+        const matchesId = campaign.id.toString().includes(search);
+        return matchesTitle || matchesId;
+      });
     }
 
     if (isSortedByTitle) {
