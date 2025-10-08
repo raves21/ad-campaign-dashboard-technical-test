@@ -59,7 +59,7 @@ function Index() {
     return (
       <div className="size-full flex flex-col gap-6 pt-12">
         <h1 className="text-2xl text-center md:text-3xl font-semibold">
-          Advertising Campaigns
+          Ad Campaign Dashboard
         </h1>
         <div className="flex flex-col md:flex-row gap-6 w-full items-center">
           <SearchInput search={search} setSearch={setSearch} />
